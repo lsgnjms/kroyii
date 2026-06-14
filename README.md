@@ -6,7 +6,7 @@ An AI-powered onchain agent built on Ethereum.
 https://kroyii.vercel.app
 
 ## Built With
-- [Scaffold-ETH 2](https://scaffoldeth.io)
+- Scaffold-ETH 2
 - NextJS
 - Venice AI
 - RainbowKit
