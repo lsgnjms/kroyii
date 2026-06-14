@@ -1,0 +1,129 @@
+﻿@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --shadow-center: 0 0 12px -2px rgb(0 0 0 / 0.05);
+  --animate-pulse-fast: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@plugin "daisyui" {
+  themes:
+    light,
+    dark --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+
+  --color-primary: #6c47ff;
+  --color-primary-content: #ffffff;
+  --color-secondary: #ede9fe;
+  --color-secondary-content: #3b1fa8;
+  --color-accent: #00d4aa;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1a1a2e;
+  --color-neutral-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f5f3ff;
+  --color-base-300: #ede9fe;
+  --color-base-content: #1a1a2e;
+  --color-info: #6c47ff;
+  --color-success: #00d4aa;
+  --color-warning: #ffcf72;
+  --color-error: #ff5c7a;
+
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --tt-tailw: 6px;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+
+  --color-primary: #8b5cf6;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e1b4b;
+  --color-secondary-content: #c4b5fd;
+  --color-accent: #00d4aa;
+  --color-accent-content: #ffffff;
+  --color-neutral: #f9fafb;
+  --color-neutral-content: #1e1b4b;
+  --color-base-100: #0f0f1a;
+  --color-base-200: #13131f;
+  --color-base-300: #1a1a2e;
+  --color-base-content: #e2e8f0;
+  --color-info: #8b5cf6;
+  --color-success: #00d4aa;
+  --color-warning: #ffcf72;
+  --color-error: #ff5c7a;
+
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --tt-tailw: 6px;
+  --tt-bg: var(--color-primary);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+}
+
+:root,
+[data-theme] {
+  background: var(--color-base-200);
+}
+
+.btn {
+  @apply shadow-md;
+  border-radius: 9999rem;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
+
+.link {
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  opacity: 80%;
+}
+
+.kroyii-gradient {
+  background: linear-gradient(135deg, #6c47ff 0%, #00d4aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.kroyii-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kroyii-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(108, 71, 255, 0.15);
+}

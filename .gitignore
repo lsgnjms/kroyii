@@ -1,0 +1,29 @@
+# dependencies
+node_modules
+
+.env
+.env.local
+.env*.local
+.next/
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# eslint
+.eslintcache
+
+# misc
+.DS_Store
+API Keys
+
+# IDE
+.vscode
+.idea
+
+# cli
+dist
