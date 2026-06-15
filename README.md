@@ -121,7 +121,6 @@ Create `packages/nextjs/.env.local`:
 NEXT_PUBLIC_ALCHEMY_API_KEY=your_alchemy_key
 NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_walletconnect_project_id
 NEXT_PUBLIC_PIMLICO_API_KEY=your_pimlico_key
-PIMLICO_API_KEY=your_pimlico_key
 VENICE_API_KEY=your_venice_key
 ```
 
