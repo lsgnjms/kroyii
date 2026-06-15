@@ -8,12 +8,6 @@ Grant permissions once. Kroyii reasons with Venice AI and executes onchain actio
 
 https://kroyii.vercel.app
 
-## Demo Video
-
-[Watch Demo](<your-demo-video-link-here>)
-
----
-
 ## How It Works
 
 1. **Connect** your MetaMask Flask wallet
