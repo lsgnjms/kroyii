@@ -80,7 +80,7 @@ https://github.com/lsgnjms/kroyii/blob/main/packages/nextjs/app/api/agent/route.
 ## Tech Stack
 
 - **MetaMask Smart Accounts Kit** — ERC-7715 Advanced Permissions + EIP-7702 Smart Account upgrade
-- **Venice AI** — Agent reasoning via `llama-3.3-70b` on OpenAI-compatible endpoint
+- **Venice AI** — Agent reasoning
 - **Scaffold-ETH 2** — Project scaffold with MetaMask ERC-7715 extension
 - **Next.js** — Frontend + server-side API routes
 - **Wagmi + Viem** — Wallet connection and blockchain interactions
